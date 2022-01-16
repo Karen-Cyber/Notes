@@ -1,0 +1,8 @@
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/CMakeFiles/edit_cache.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/CMakeFiles/rebuild_cache.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/src/CMakeFiles/stereo700_cam.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/src/CMakeFiles/edit_cache.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/src/CMakeFiles/rebuild_cache.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/app/CMakeFiles/disparity_refined.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/app/CMakeFiles/edit_cache.dir
+/home/karen/myWorkSpace/Ubuntu_Slam-sub_2021_11_06/disparity_refined/build/app/CMakeFiles/rebuild_cache.dir

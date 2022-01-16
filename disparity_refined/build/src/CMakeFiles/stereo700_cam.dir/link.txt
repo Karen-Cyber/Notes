@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libstereo700_cam.a CMakeFiles/stereo700_cam.dir/camera.cpp.o
+/usr/bin/ranlib ../../lib/libstereo700_cam.a
