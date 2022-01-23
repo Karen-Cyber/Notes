@@ -1,0 +1,43 @@
+mkdir bin
+mkdir src
+mkdir app
+mkdir lib
+mkdir build
+mkdir include
+mkdir config
+
+touch CMakeLists.txt
+touch src/CMakeLists.txt
+touch app/CMakeLists.txt
+
+echo "CMAKE_MINIMUM_REQUIRED(VERSION 3.19)" >> CMakeLists.txt
+echo "PROJECT(network_learning)" >> CMakeLists.txt
+echo "" >> CMakeLists.txt
+echo "SET(CMAKE_BUILD_TYPE \"Debug\")" >> CMakeLists.txt
+echo "SET(CMAKE_CXX_STANDARD 14)" >> CMakeLists.txt
+echo "SET(EXECUTABLE_OUTPUT_PATH \${PROJECT_SOURCE_DIR}/bin)" >> CMakeLists.txt
+echo "SET(LIBRARY_OUTPUT_PATH \${PROJECT_SOURCE_DIR}/lib)" >> CMakeLists.txt
+echo "" >> CMakeLists.txt
+echo "# third party libs" >> CMakeLists.txt
+echo "# FIND_PACKAGE(OpenCV REQUIRED)" >> CMakeLists.txt
+echo "" >> CMakeLists.txt
+echo "INCLUDE_DIRECTORIES(\${PROJECT_SOURCE_DIR}/include)" >> CMakeLists.txt
+echo "SET(THIRD_PARTY_LIBS )" >> CMakeLists.txt
+echo "# <LINK_LIBRARIES> has be deprecated, use <TARGET_LINK_LIBRARIES> instead" >> CMakeLists.txt
+echo "" >> CMakeLists.txt
+echo "ADD_SUBDIRECTORY(./src)" >> CMakeLists.txt
+echo "ADD_SUBDIRECTORY(./app)" >> CMakeLists.txt
+
+echo "AUX_SOURCE_DIRECTORY(. SRC_LIST)" >> src/CMakeLists.txt
+echo "" >> src/CMakeLists.txt
+echo "ADD_LIBRARY(your_lib_name STATIC \${SRC_LIST})" >> src/CMakeLists.txt
+echo "" >> src/CMakeLists.txt
+echo "TARGET_LINK_LIBRARIES(your_lib_name \${THIRD_PARTY_LIBS})" >> src/CMakeLists.txt
+
+echo "AUX_SOURCE_DIRECTORY(. APP_LIST)" >> app/CMakeLists.txt
+echo "" >> app/CMakeLists.txt
+echo "FOREACH(app \${APP_LIST})" >> app/CMakeLists.txt
+echo "    GET_FILENAME_COMPONENT(output \${app} NAME_WE)" >> app/CMakeLists.txt
+echo "    ADD_EXECUTABLE(\${output} \${app})" >> app/CMakeLists.txt
+echo "    TARGET_LINK_LIBRARIES(\${output} your_lib_name)" >> app/CMakeLists.txt
+echo "ENDFOREACH()" >> app/CMakeLists.txt
