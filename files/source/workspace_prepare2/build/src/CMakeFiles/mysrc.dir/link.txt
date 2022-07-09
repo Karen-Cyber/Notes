@@ -1,0 +1,2 @@
+F:\Vs_Code\mingw64\bin\ar.exe qc ..\..\lib\libmysrc.a CMakeFiles/mysrc.dir/config.cpp.obj
+F:\Vs_Code\mingw64\bin\ranlib.exe ..\..\lib\libmysrc.a

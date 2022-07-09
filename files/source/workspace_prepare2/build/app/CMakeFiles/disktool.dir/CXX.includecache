@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/config.h
+unordered_map
+-
+string
+-
+
+I:/VScode_projects/disk_tool/app/disktool.cpp
+iostream
+-
+io.h
+-
+config.h
+I:/VScode_projects/disk_tool/app/config.h
+
